@@ -4,6 +4,8 @@ An AI agent that investigates business metric anomalies the way a rigorous analy
 
 Most "AI analytics" tools stop at *"here's what correlates with your metric."* This project goes further: it detects anomalies, generates hypotheses using a local LLM, tests each one with **Granger causality**, and rejects the misleading ones — before writing a business-readable root cause report.
 
+![Demo](demo.gif)
+
 ## 🧠 The Core Problem
 
 Dashboards tell you *what* happened. They rarely tell you *why* — and worse, the most visually correlated variable is often not the true cause. This project was built and validated against a synthetic dataset with a **known, hidden root cause** plus deliberate red herrings, specifically to prove the agent finds the truth rather than the most convenient story.
